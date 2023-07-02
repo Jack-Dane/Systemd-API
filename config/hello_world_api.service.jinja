@@ -1,0 +1,12 @@
+[Unit]
+Description=hello world api service
+After=network.target
+
+[Service]
+Restart=always
+RestartSec=1
+User={{ user }}
+ExecStart={{ run_file }}
+
+[Install]
+WantedBy=multi-user.target
